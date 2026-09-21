@@ -1,0 +1,1 @@
+{"version":"0.0.1","configurations":[{"name":"lp-bpc-autista-negado","runtimeExecutable":"node","runtimeArgs":["static-server.js"],"port":4599}]}

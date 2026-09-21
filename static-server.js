@@ -19,7 +19,9 @@ const MIME = {
 
 http.createServer((req, res) => {
   let rel = decodeURIComponent(req.url.split("?")[0]);
-  if (rel === "/") rel = "/index.html";
+  // pasta -> index.html dentro dela, igual ao GitHub Pages (/renda/ -> /renda/index.html)
+  if (rel.endsWith("/")) rel += "index.html";
+  else if (!path.extname(rel)) rel += "/index.html";
   const parts = path.normalize(rel).split("/").filter(p => p && p !== "." && p !== "..");
   const file = path.join(ROOT, ...parts);
   fs.readFile(file, (err, buf) => {

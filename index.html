@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- ===================== EDITE AQUI =====================
-     1) DOMINIO ...... trocar https://eduardocdc0-lgtm.github.io/bpc-autista-negado
+     1) DOMINIO ...... trocar https://adveduardorodrigues.com.br/bpc-autista-negado
                        em <link rel="canonical">, og:url, twitter, JSON-LD e sitemap.xml
      2) WHATSAPP ..... trocar CONFIG.whatsapp no <script> do rodape (so digitos, DDI+DDD+n).
                        Um unico lugar: atualiza TODOS os botoes, o rodape e o link tel:
@@ -18,16 +18,16 @@
 <meta name="keywords" content="BPC autista negado, BPC LOAS autismo, benefício assistencial autismo, INSS negou BPC, advogado BPC autismo, CID F84, perícia do INSS autismo, avaliação social INSS">
 <meta name="author" content="Eduardo Rodrigues Advocacia">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#161618">
-<link rel="canonical" href="https://eduardocdc0-lgtm.github.io/bpc-autista-negado">
+<meta name="theme-color" content="#0f1d34">
+<link rel="canonical" href="https://adveduardorodrigues.com.br/bpc-autista-negado">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Eduardo Rodrigues Advocacia">
 <meta property="og:title" content="BPC Autista Negado pelo INSS | Advogado Especialista">
 <meta property="og:description" content="O INSS negou o BPC do seu filho autista? A negativa não encerra o caso: dá pra contestar na Justiça e pedir os atrasados. Análise gratuita pelo WhatsApp.">
-<meta property="og:url" content="https://eduardocdc0-lgtm.github.io/bpc-autista-negado">
-<meta property="og:image" content="https://eduardocdc0-lgtm.github.io/bpc-autista-negado/assets/og-image.jpg">
+<meta property="og:url" content="https://adveduardorodrigues.com.br/bpc-autista-negado">
+<meta property="og:image" content="https://adveduardorodrigues.com.br/bpc-autista-negado/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="BPC para autismo negado pelo INSS — análise gratuita com advogado especialista">
@@ -35,16 +35,23 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="BPC Autista Negado pelo INSS | Advogado Especialista">
 <meta name="twitter:description" content="A negativa do INSS não encerra o caso. Dá pra contestar na Justiça e pedir os atrasados. Análise gratuita pelo WhatsApp.">
-<meta name="twitter:image" content="https://eduardocdc0-lgtm.github.io/bpc-autista-negado/assets/og-image.jpg">
+<meta name="twitter:image" content="https://adveduardorodrigues.com.br/bpc-autista-negado/assets/og-image.jpg">
 
-<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="assets/hero-card.webp" fetchpriority="high">
+<link rel="preload" as="image" href="assets/hero-card.webp"
+      imagesrcset="assets/hero-card-620.webp 620w, assets/hero-card.webp 900w"
+      imagesizes="(max-width:780px) 92vw, 460px" fetchpriority="high">
 <link rel="preload" as="image" href="assets/logo.webp">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- Inter variavel: 1 arquivo cobre os pesos 400-900, em vez de 7 estaticos.
+     media="print" + onload tira a folha do caminho critico de renderizacao. -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap"></noscript>
 
 <script type="application/ld+json">
 {
@@ -52,9 +59,9 @@
   "@type": "LegalService",
   "name": "Eduardo Rodrigues Advocacia",
   "description": "Advocacia previdenciária especializada em BPC/LOAS para autismo e demais benefícios do INSS. Atendimento humanizado e 100% digital em todo o Brasil.",
-  "url": "https://eduardocdc0-lgtm.github.io/bpc-autista-negado",
-  "image": "https://eduardocdc0-lgtm.github.io/bpc-autista-negado/assets/og-image.jpg",
-  "logo": "https://eduardocdc0-lgtm.github.io/bpc-autista-negado/assets/logo.webp",
+  "url": "https://adveduardorodrigues.com.br/bpc-autista-negado",
+  "image": "https://adveduardorodrigues.com.br/bpc-autista-negado/assets/og-image.jpg",
+  "logo": "https://adveduardorodrigues.com.br/bpc-autista-negado/assets/logo.webp",
   "priceRange": "Sob consulta",
   "telephone": "+5581999304526",
   "areaServed": { "@type": "Country", "name": "Brasil" },
@@ -83,13 +90,13 @@
 <style>
 /* ============ TOKENS ============ */
 :root{
-  --navy-900:#0e0e10;  --navy-800:#161618;  --navy-700:#1d1d20;
-  --navy-600:#2a2a2f;  --navy-500:#3a3a41;
-  --gold-500:#c9a24b;  --gold-400:#d4af37;  --gold-300:#e6c976;  --gold-200:#f3e2af;
-  --cream:#f6f3ec;     --text:#ececef;      --muted:#adadb6;
+  --navy-900:#07162a;  --navy-800:#0f1d34;  --navy-700:#15273f;
+  --navy-600:#1d3552;  --navy-500:#2c4a6e;
+  --gold-500:#2e6fb8;  --gold-400:#3e8ed6;  --gold-300:#6fb8ec;  --gold-200:#bfe3f8;
+  --cream:#f1f5fc;     --text:#ececef;      --muted:#adadb6;
   --radius:18px;       --maxw:1280px;
   --shadow:0 24px 60px -20px rgba(0,0,0,.55);
-  --grad-gold:linear-gradient(135deg,#f3e2af 0%,#d4af37 40%,#b8862b 100%);
+  --grad-gold:linear-gradient(135deg,#bfe3f8 0%,#3e8ed6 40%,#1f4f92 100%);
 }
 
 /* ============ RESET ============ */
@@ -116,21 +123,21 @@ h1,h2,h3{font-weight:800;line-height:1.12;letter-spacing:-.02em}
 
 /* ============ DOBRAS ============ */
 section.block{padding:96px 0;position:relative}
-section.block.light{background:#f5f3ed;color:#26262b}
+section.block.light{background:#f1f5fc;color:#0f1d34}
 section.block.light h2,
-section.block.light h3{color:#161618}
+section.block.light h3{color:#0f1d34}
 section.block.light p,
-section.block.light li{color:#5d5d66}
-section.block.light .eyebrow{color:#a07d1e;border-color:rgba(160,125,30,.32);background:rgba(160,125,30,.07)}
-section.block.light .eyebrow::before{background:#a07d1e;box-shadow:0 0 12px rgba(160,125,30,.85)}
-section.block.light .gold-text{background:linear-gradient(135deg,#c79a2f 0%,#9c7415 100%);-webkit-background-clip:text;background-clip:text}
-section.block.light .card{background:#fff;border-color:#e7e1d3;box-shadow:0 18px 40px -26px rgba(20,20,23,.4)}
-section.block.light .card .num{color:rgba(20,20,23,.07)}
-section.block.light .card .ic{background:rgba(160,125,30,.1);color:#a07d1e;border-color:rgba(160,125,30,.22)}
-section.block.light .stat b{color:#b0831e}
-section.block.light .pill-list li{color:#4c4c55}
-section.block.light .pill-list .chk{color:#a07d1e;background:rgba(160,125,30,.1);border-color:rgba(160,125,30,.24)}
-section.block.light + section.block.light{border-top:1px solid rgba(20,20,23,.05)}
+section.block.light li{color:#5e6b7e}
+section.block.light .eyebrow{color:#1f4f92;border-color:rgba(31,79,146,.3);background:rgba(31,79,146,.07)}
+section.block.light .eyebrow::before{background:#1f4f92;box-shadow:0 0 12px rgba(31,79,146,.85)}
+section.block.light .gold-text{background:linear-gradient(135deg,#2e6fb8 0%,#123d74 100%);-webkit-background-clip:text;background-clip:text}
+section.block.light .card{background:#fff;border-color:#dce4f0;box-shadow:0 18px 40px -26px rgba(15,29,52,.22)}
+section.block.light .card .num{color:rgba(15,29,52,.07)}
+section.block.light .card .ic{background:rgba(31,79,146,.09);color:#1f4f92;border-color:rgba(31,79,146,.2)}
+section.block.light .stat b{color:#1f4f92}
+section.block.light .pill-list li{color:#4a5769}
+section.block.light .pill-list .chk{color:#1f4f92;background:rgba(31,79,146,.09);border-color:rgba(31,79,146,.22)}
+section.block.light + section.block.light{border-top:1px solid rgba(15,29,52,.06)}
 .bg-band{
   background:
     radial-gradient(900px 500px at 85% 0,rgba(70,70,80,.45),transparent 60%),
@@ -142,8 +149,8 @@ section.block.light + section.block.light{border-top:1px solid rgba(20,20,23,.05
   display:inline-flex;align-items:center;gap:9px;
   font-size:.74rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
   color:var(--gold-300);
-  border:1px solid rgba(212,175,55,.35);border-radius:100px;
-  background:rgba(212,175,55,.06);
+  border:1px solid rgba(62,142,214,.35);border-radius:100px;
+  background:rgba(62,142,214,.06);
   padding:8px 16px;margin-bottom:18px;
 }
 .eyebrow::before{
@@ -170,12 +177,12 @@ section.block.light + section.block.light{border-top:1px solid rgba(20,20,23,.05
   box-shadow:0 14px 34px -14px rgba(19,164,73,.75);
   transition:transform .25s cubic-bezier(.2,.8,.2,1),filter .25s ease,box-shadow .25s ease,background-position .5s ease;
 }
-.btn-gold{background:var(--grad-gold);color:#241a05;box-shadow:0 14px 34px -14px rgba(212,175,55,.7)}
-.btn-ghost{background:transparent;color:var(--gold-200);border:1.5px solid rgba(212,175,55,.5)}
+.btn-gold{background:var(--grad-gold);color:#06182b;box-shadow:0 14px 34px -14px rgba(62,142,214,.7)}
+.btn-ghost{background:transparent;color:var(--gold-200);border:1.5px solid rgba(62,142,214,.5)}
 .btn-ghost::after{display:none}
 .btn-wpp:hover,.btn-gold:hover{transform:translateY(-4px) scale(1.025);filter:brightness(1.07)}
 .btn-wpp:hover{background-position:100% 0%}
-.btn-ghost:hover{transform:translateY(-4px);border-color:var(--gold-400);background:rgba(212,175,55,.09)}
+.btn-ghost:hover{transform:translateY(-4px);border-color:var(--gold-400);background:rgba(62,142,214,.09)}
 .btn-wpp:hover::after,.btn-gold:hover::after{left:130%}
 .btn.pulse{animation:pulse 2.4s infinite}
 @keyframes pulse{
@@ -195,9 +202,9 @@ section.block.light + section.block.light{border-top:1px solid rgba(20,20,23,.05
 }
 .card::before{
   content:"";position:absolute;inset:0;opacity:0;transition:opacity .45s ease;pointer-events:none;
-  background:radial-gradient(420px 220px at 80% -10%,rgba(212,175,55,.2),transparent 65%);
+  background:radial-gradient(420px 220px at 80% -10%,rgba(62,142,214,.2),transparent 65%);
 }
-.card:hover{transform:translateY(-8px);border-color:rgba(212,175,55,.45);box-shadow:var(--shadow)}
+.card:hover{transform:translateY(-8px);border-color:rgba(62,142,214,.45);box-shadow:var(--shadow)}
 .card:hover::before{opacity:1}
 .card .num{
   position:absolute;top:14px;right:22px;font-size:3.4rem;font-weight:900;
@@ -205,7 +212,7 @@ section.block.light + section.block.light{border-top:1px solid rgba(20,20,23,.05
 }
 .card .ic{
   width:60px;height:60px;border-radius:15px;display:grid;place-items:center;
-  background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.26);
+  background:rgba(62,142,214,.12);border:1px solid rgba(62,142,214,.26);
   color:var(--gold-300);margin-bottom:20px;
 }
 .card .ic svg{width:30px;height:30px}
@@ -216,7 +223,7 @@ section.block.light + section.block.light{border-top:1px solid rgba(20,20,23,.05
 .pill-list li{display:flex;gap:13px;align-items:flex-start;font-size:1rem;color:var(--muted)}
 .pill-list .chk{
   flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;margin-top:2px;
-  background:rgba(212,175,55,.13);border:1px solid rgba(212,175,55,.3);color:var(--gold-300);
+  background:rgba(62,142,214,.13);border:1px solid rgba(62,142,214,.3);color:var(--gold-300);
 }
 .pill-list .chk svg{width:15px;height:15px}
 
@@ -227,7 +234,7 @@ section.block.light + section.block.light{border-top:1px solid rgba(20,20,23,.05
 /* ============ 5.0 PROGRESSO ============ */
 .progress{
   position:fixed;top:0;left:0;height:3px;width:0;z-index:100;
-  background:var(--grad-gold);box-shadow:0 0 12px rgba(212,175,55,.7);
+  background:var(--grad-gold);box-shadow:0 0 12px rgba(62,142,214,.7);
 }
 
 /* ============ 5.1 HEADER ============ */
@@ -247,7 +254,7 @@ header .btn{display:none;padding:13px 24px;font-size:.9rem}
   position:relative;overflow:hidden;padding:146px 0 78px;
   background:
     radial-gradient(1200px 600px at 75% -10%,rgba(70,70,80,.55),transparent 60%),
-    radial-gradient(900px 500px at 10% 110%,rgba(212,175,55,.12),transparent 55%),
+    radial-gradient(900px 500px at 10% 110%,rgba(62,142,214,.12),transparent 55%),
     linear-gradient(160deg,var(--navy-900),var(--navy-700) 55%,var(--navy-800));
 }
 .hero::before{
@@ -260,7 +267,7 @@ header .btn{display:none;padding:13px 24px;font-size:.9rem}
 }
 .orb{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none;animation:float 12s ease-in-out infinite}
 .orb.a{width:380px;height:380px;top:-90px;right:-70px;background:rgba(120,120,135,.3)}
-.orb.b{width:320px;height:320px;bottom:-110px;left:-80px;background:rgba(212,175,55,.2);animation-delay:-4s}
+.orb.b{width:320px;height:320px;bottom:-110px;left:-80px;background:rgba(62,142,214,.2);animation-delay:-4s}
 @keyframes float{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-34px,0)}}
 .hero .container{position:relative;z-index:2}
 .hero-grid{display:grid;grid-template-areas:"card" "text";gap:34px}
@@ -272,8 +279,8 @@ header .btn{display:none;padding:13px 24px;font-size:.9rem}
 .hero .lead b{color:var(--text);font-weight:600}
 .hero-callout{
   display:flex;gap:15px;align-items:flex-start;margin-top:22px;padding:18px 20px;
-  border:1px solid rgba(212,175,55,.34);border-radius:16px;
-  background:linear-gradient(120deg,rgba(212,175,55,.14),rgba(212,175,55,.04));
+  border:1px solid rgba(62,142,214,.34);border-radius:16px;
+  background:linear-gradient(120deg,rgba(62,142,214,.14),rgba(62,142,214,.04));
   max-width:640px;
 }
 .hero-callout svg{width:30px;height:30px;color:var(--gold-300);flex:none}
@@ -301,17 +308,17 @@ header .btn{display:none;padding:13px 24px;font-size:.9rem}
 .hero-card{
   position:relative;
   background:linear-gradient(160deg,rgba(44,44,50,.65),rgba(22,22,25,.85));
-  border:1px solid rgba(212,175,55,.3);border-radius:26px;padding:34px 30px;
+  border:1px solid rgba(62,142,214,.3);border-radius:26px;padding:34px 30px;
   backdrop-filter:blur(6px);box-shadow:var(--shadow);
   transition:transform .4s ease;
 }
 .ribbon{
   position:absolute;top:-16px;left:30px;z-index:3;
-  background:var(--grad-gold);color:#241a05;font-weight:800;font-size:.76rem;
+  background:var(--grad-gold);color:#06182b;font-weight:800;font-size:.76rem;
   letter-spacing:.06em;text-transform:uppercase;padding:9px 18px;border-radius:100px;
-  box-shadow:0 10px 24px -10px rgba(212,175,55,.8);
+  box-shadow:0 10px 24px -10px rgba(62,142,214,.8);
 }
-.hero-photo{border-radius:18px;overflow:hidden;border:1px solid rgba(212,175,55,.3);margin-bottom:24px}
+.hero-photo{border-radius:18px;overflow:hidden;border:1px solid rgba(62,142,214,.3);margin-bottom:24px}
 .hero-photo img{width:100%;height:auto;aspect-ratio:5/4;object-fit:cover;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
 .hero-card:hover .hero-photo img{transform:scale(1.05)}
 .hero-card h3{font-size:1.1rem;color:var(--muted);font-weight:600;letter-spacing:0}
@@ -347,7 +354,7 @@ header .btn{display:none;padding:13px 24px;font-size:.9rem}
 @media (min-width:920px){.split{grid-template-columns:1fr 1.05fr;gap:60px;align-items:center}}
 .what-visual{
   background:linear-gradient(160deg,var(--navy-600),var(--navy-800));
-  border:1px solid rgba(212,175,55,.22);border-radius:24px;padding:22px;box-shadow:var(--shadow);
+  border:1px solid rgba(62,142,214,.22);border-radius:24px;padding:22px;box-shadow:var(--shadow);
 }
 .what-photo{position:relative;border-radius:16px;overflow:hidden;margin-bottom:22px}
 .what-photo img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
@@ -375,12 +382,12 @@ section.block.light .mini span{color:var(--muted)}
 .highlight{
   position:relative;overflow:hidden;
   background:linear-gradient(135deg,var(--navy-600),var(--navy-700));
-  border:1px solid rgba(212,175,55,.3);border-radius:26px;padding:50px;
+  border:1px solid rgba(62,142,214,.3);border-radius:26px;padding:50px;
   display:grid;gap:32px;box-shadow:var(--shadow);
 }
 .highlight::before{
   content:"";position:absolute;width:300px;height:300px;top:-140px;right:-90px;border-radius:50%;
-  background:radial-gradient(circle,rgba(212,175,55,.3),transparent 70%);pointer-events:none;
+  background:radial-gradient(circle,rgba(62,142,214,.3),transparent 70%);pointer-events:none;
 }
 .highlight h3{font-size:clamp(1.5rem,3.2vw,2.05rem);margin-bottom:16px;position:relative}
 .highlight p{color:var(--muted);font-size:1.02rem;position:relative}
@@ -388,7 +395,7 @@ section.block.light .mini span{color:var(--muted)}
 .highlight .stack{display:grid;gap:13px;align-content:center;position:relative}
 section.block.light .highlight h3{color:#fff}
 section.block.light .highlight p{color:#b6b6c0}
-section.block.light .highlight .eyebrow{color:var(--gold-300);border-color:rgba(212,175,55,.35);background:rgba(212,175,55,.06)}
+section.block.light .highlight .eyebrow{color:var(--gold-300);border-color:rgba(62,142,214,.35);background:rgba(62,142,214,.06)}
 section.block.light .highlight .eyebrow::before{background:var(--gold-400);box-shadow:0 0 12px var(--gold-400)}
 section.block.light .highlight .gold-text{background:var(--grad-gold);-webkit-background-clip:text;background-clip:text}
 @media (min-width:860px){.highlight{grid-template-columns:1.4fr 1fr;gap:46px;align-items:center}}
@@ -401,11 +408,11 @@ section.block.light .highlight .gold-text{background:var(--grad-gold);-webkit-ba
   border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:32px 26px;
   transition:border-color .35s ease,transform .35s cubic-bezier(.2,.8,.2,1);
 }
-.step:hover{border-color:rgba(212,175,55,.4);transform:translateY(-6px)}
+.step:hover{border-color:rgba(62,142,214,.4);transform:translateY(-6px)}
 .step .n{
   width:54px;height:54px;border-radius:50%;display:grid;place-items:center;
-  background:var(--grad-gold);color:#241a05;font-weight:900;font-size:1.25rem;margin-bottom:20px;
-  box-shadow:0 12px 26px -12px rgba(212,175,55,.8);
+  background:var(--grad-gold);color:#06182b;font-weight:900;font-size:1.25rem;margin-bottom:20px;
+  box-shadow:0 12px 26px -12px rgba(62,142,214,.8);
 }
 .step h3{font-size:1.12rem;margin-bottom:10px}
 .step p{color:var(--muted);font-size:.96rem}
@@ -426,7 +433,7 @@ section.block.light .highlight .gold-text{background:var(--grad-gold);-webkit-ba
 .row{display:flex;gap:16px;align-items:flex-start}
 .row .ic{
   flex:none;width:46px;height:46px;border-radius:13px;display:grid;place-items:center;
-  background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.26);color:var(--gold-300);
+  background:rgba(62,142,214,.12);border:1px solid rgba(62,142,214,.26);color:var(--gold-300);
 }
 .row .ic svg{width:23px;height:23px}
 .row h3{font-size:1.04rem;margin-bottom:5px}
@@ -445,9 +452,9 @@ section.block.light .highlight .gold-text{background:var(--grad-gold);-webkit-ba
 /* ============ 5.8 CTA FINAL ============ */
 .final{
   text-align:center;border-radius:30px;padding:64px 40px;
-  border:1px solid rgba(212,175,55,.3);
+  border:1px solid rgba(62,142,214,.3);
   background:
-    radial-gradient(700px 400px at 50% -10%,rgba(212,175,55,.22),transparent 60%),
+    radial-gradient(700px 400px at 50% -10%,rgba(62,142,214,.22),transparent 60%),
     linear-gradient(160deg,var(--navy-600),var(--navy-800));
   box-shadow:var(--shadow);
 }
@@ -455,7 +462,7 @@ section.block.light .highlight .gold-text{background:var(--grad-gold);-webkit-ba
 .final > p{color:var(--muted);max-width:640px;margin:0 auto 32px;font-size:1.03rem}
 section.block.light .final h2{color:#fff}
 section.block.light .final > p{color:#b6b6c0}
-section.block.light .final .eyebrow{color:var(--gold-300);border-color:rgba(212,175,55,.35);background:rgba(212,175,55,.06)}
+section.block.light .final .eyebrow{color:var(--gold-300);border-color:rgba(62,142,214,.35);background:rgba(62,142,214,.06)}
 section.block.light .final .eyebrow::before{background:var(--gold-400);box-shadow:0 0 12px var(--gold-400)}
 section.block.light .final .gold-text{background:var(--grad-gold);-webkit-background-clip:text;background-clip:text}
 .final .callme{margin-top:26px;font-size:.92rem;color:var(--muted)}
@@ -465,7 +472,7 @@ section.block.light .final .gold-text{background:var(--grad-gold);-webkit-backgr
 /* ============ 5.9 FAQ ============ */
 #faqList{max-width:840px;margin:0 auto;display:grid;gap:13px}
 .acc{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:15px;overflow:hidden;transition:border-color .3s ease}
-.acc.open{border-color:rgba(212,175,55,.42)}
+.acc.open{border-color:rgba(62,142,214,.42)}
 .acc > button{
   width:100%;display:flex;align-items:center;justify-content:space-between;gap:18px;
   padding:21px 24px;text-align:left;font-weight:700;font-size:1.01rem;color:var(--text);
@@ -566,6 +573,20 @@ footer{background:var(--navy-900);border-top:1px solid rgba(255,255,255,.07);pad
   .fab{padding:13px;right:14px;bottom:16px}
   .fab svg{width:25px;height:25px}
   .mini-grid{gap:10px}
+
+  /* Custo de GPU em celular barato. Dois orbs com blur(70px), backdrop-filter em
+     quatro elementos e blur animado no reveal travam o scroll em aparelho fraco.
+     Nada disso e visivel o bastante no mobile pra valer o preco. */
+  .orb{filter:blur(44px);animation:none}
+  .orb.a{width:210px;height:210px}
+  .orb.b{width:180px;height:180px}
+  .hero::before{display:none}
+  .hero-card{backdrop-filter:none}
+  .what-badge{backdrop-filter:none;background:rgba(15,29,52,.78)}
+  .glass{backdrop-filter:none;background:rgba(15,29,52,.84)}
+  .reveal{filter:none;transition:opacity .55s cubic-bezier(.2,.8,.2,1),transform .55s cubic-bezier(.2,.8,.2,1)}
+  .reveal.in{filter:none}
+  .btn.pulse{animation:none}
 }
 @media (max-width:420px){
   .value-row{flex-direction:column;gap:4px}
@@ -614,8 +635,8 @@ footer{background:var(--navy-900);border-top:1px solid rgba(255,255,255,.07);pad
 
         <div class="hero-callout reveal d3">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/>
-            <path d="M19 15l.7 1.8L21.5 18l-1.8.7L19 21l-.7-2.3L16.5 18l1.8-.7L19 15z"/>
+            <path d="M12 12c-1.4-2.2-2.6-3.3-4.2-3.3A3.5 3.5 0 004.3 12a3.5 3.5 0 003.5 3.3c1.6 0 2.8-1.1 4.2-3.3z"/>
+            <path d="M12 12c1.4 2.2 2.6 3.3 4.2 3.3A3.5 3.5 0 0019.7 12a3.5 3.5 0 00-3.5-3.3c-1.6 0-2.8 1.1-4.2 3.3z"/>
           </svg>
           <p>O BPC <b>não exige nenhuma contribuição</b> ao INSS. E o autismo é reconhecido <b>por lei</b> como deficiência, para todos os efeitos legais.</p>
         </div>
@@ -643,7 +664,9 @@ footer{background:var(--navy-900);border-top:1px solid rgba(255,255,255,.07);pad
 
           <!-- TROCAR POR assets/hero-card.webp definitiva (900x900) — foto atual veio da página de referência -->
           <div class="hero-photo">
-            <img src="assets/hero-card.webp" alt="Criança com Transtorno do Espectro Autista — BPC/LOAS negado pelo INSS" width="900" height="900" loading="eager" decoding="async" fetchpriority="high">
+            <img src="assets/hero-card.webp"
+                 srcset="assets/hero-card-620.webp 620w, assets/hero-card.webp 900w"
+                 sizes="(max-width:780px) 92vw, 460px" alt="Criança com Transtorno do Espectro Autista — BPC/LOAS negado pelo INSS" width="900" height="900" loading="eager" decoding="async" fetchpriority="high">
           </div>
 
           <h3>Quanto é o BPC?</h3>
@@ -679,7 +702,9 @@ footer{background:var(--navy-900);border-top:1px solid rgba(255,255,255,.07);pad
       <div class="what-visual has-photo reveal">
         <!-- TROCAR POR assets/conceito.webp definitiva: mãe e criança autista em casa ou em terapia -->
         <div class="what-photo">
-          <img src="assets/conceito.webp" alt="Família de criança autista reunindo documentos para o BPC/LOAS do INSS" width="1280" height="853" loading="lazy" decoding="async">
+          <img src="assets/conceito.webp"
+               srcset="assets/conceito-700.webp 700w, assets/conceito.webp 1280w"
+               sizes="(max-width:920px) 92vw, 560px" alt="Família de criança autista reunindo documentos para o BPC/LOAS do INSS" width="1280" height="853" loading="lazy" decoding="async">
           <span class="what-badge">1 salário mínimo, todo mês</span>
         </div>
         <p>O BPC paga mensalmente à pessoa com deficiência de família de baixa renda. Não é aposentadoria e não exige nenhuma contribuição.</p>
@@ -795,7 +820,9 @@ footer{background:var(--navy-900);border-top:1px solid rgba(255,255,255,.07);pad
     <div class="why">
       <!-- TROCAR POR assets/escritorio.webp definitiva: interior ou fachada do escritório, luz quente -->
       <div class="why-photo reveal">
-        <img src="assets/escritorio.webp" alt="Escritório de Eduardo Rodrigues Advocacia, especializado em BPC/LOAS para autismo" width="900" height="661" loading="lazy" decoding="async">
+        <img src="assets/escritorio.webp"
+             srcset="assets/escritorio-560.webp 560w, assets/escritorio.webp 900w"
+             sizes="(max-width:780px) 92vw, 480px" alt="Escritório de Eduardo Rodrigues Advocacia, especializado em BPC/LOAS para autismo" width="900" height="661" loading="lazy" decoding="async">
         <div class="glass">
           <b>Eduardo Rodrigues Advocacia</b>
           <span>Carpina/PE · atendimento em todo o Brasil.</span>
@@ -840,7 +867,9 @@ footer{background:var(--navy-900);border-top:1px solid rgba(255,255,255,.07);pad
     <div class="about">
       <!-- TROCAR POR assets/profissional.webp definitiva: retrato vertical do advogado, traje formal -->
       <div class="about-photo reveal">
-        <img src="assets/profissional.webp" alt="Eduardo Rodrigues, advogado especialista em BPC/LOAS para autismo e benefícios do INSS" width="900" height="1350" loading="lazy" decoding="async">
+        <img src="assets/profissional.webp"
+             srcset="assets/profissional-560.webp 560w, assets/profissional.webp 900w"
+             sizes="(max-width:780px) 360px, 520px" alt="Eduardo Rodrigues, advogado especialista em BPC/LOAS para autismo e benefícios do INSS" width="900" height="1350" loading="lazy" decoding="async">
         <div class="glass">
           <b>Eduardo Rodrigues Advocacia</b>
           <span>OAB/PE 64.717 · Carpina/PE</span>

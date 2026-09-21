@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://eduardocdc0-lgtm.github.io/bpc-autista-negado/sitemap.xml
+Sitemap: https://adveduardorodrigues.com.br/bpc-autista-negado/sitemap.xml
